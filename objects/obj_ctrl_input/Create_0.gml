@@ -10,3 +10,5 @@ global.directions[1] = 90;
 global.directions[2] = 180;
 global.directions[3] = 270;
 
+global.message_continue_pressed = false;
+
