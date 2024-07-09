@@ -12,7 +12,7 @@ if (global.message_continue_pressed) {
 
 draw_set_color(c_black);
 draw_set_alpha(0.3);
-draw_rectangle(0, 0, global.view_height, global.view_width, false);
+draw_rectangle(0, 0, global.view_width*global.window_scale, global.view_height*global.window_scale, false);
 draw_set_alpha(1);
 draw_set_color(c_white);
 draw_sprite(spr_dialogue_background, 0, 0, 0);

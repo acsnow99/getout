@@ -9,7 +9,7 @@ end_page = 1;
 
 text_pages = ["DEFAULT TEXT"];
 
-active = true;
+active = false;
 
 function start_message(text_array, end_page_index) {
 	text_pages = text_array;
