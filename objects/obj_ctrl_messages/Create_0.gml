@@ -19,6 +19,7 @@ function start_message(text_array, end_page_index) {
 }
 
 function end_message() {
+	current_page = 0;
 	active = false;
 }
 

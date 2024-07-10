@@ -9,6 +9,7 @@ enum LEVEL_BOUND_PROPS {
 
 global.level_bounds_initialized = false;
 global.level = 0;
+level_previous = 0;
 
 function initialize_level_bounds() {
 	if (!instance_exists(obj_level_bound)) {
@@ -41,4 +42,7 @@ level_seek = function(_focusx, _focusy) {
 function update_player_level_bound() {
 	if (!instance_exists(obj_player)) exit;
 	global.level = level_seek(obj_player.x, obj_player.y);
+	if (global.level != level_previous) {
+		obj_ctrl_messages.end_message();
+	}
 }
