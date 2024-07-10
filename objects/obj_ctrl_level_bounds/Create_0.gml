@@ -44,5 +44,6 @@ function update_player_level_bound() {
 	global.level = level_seek(obj_player.x, obj_player.y);
 	if (global.level != level_previous) {
 		obj_ctrl_messages.end_message();
+		level_previous = global.level;
 	}
 }
