@@ -10,8 +10,8 @@
   "name":"obj_ctrl_level_bounds",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_camera",
+    "path":"folders/Objects/grp_camera.yy",
   },
   "parentObjectId":null,
   "persistent":false,

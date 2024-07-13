@@ -12,3 +12,5 @@ global.directions[3] = 270;
 
 global.message_continue_pressed = false;
 
+global.pickup_pressed = false;
+

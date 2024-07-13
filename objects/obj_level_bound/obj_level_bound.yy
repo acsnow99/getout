@@ -6,8 +6,8 @@
   "name":"obj_level_bound",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_camera",
+    "path":"folders/Objects/grp_camera.yy",
   },
   "parentObjectId":null,
   "persistent":false,

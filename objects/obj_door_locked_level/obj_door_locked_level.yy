@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ctrl_camera",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_door_locked_level",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ctrl_camera",
+  "name":"obj_door_locked_level",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_camera",
-    "path":"folders/Objects/grp_camera.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

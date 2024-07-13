@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ctrl_camera",
+  "%Name":"obj_ctrl_wall_switcher",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ctrl_camera",
+  "name":"obj_ctrl_wall_switcher",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_camera",
-    "path":"folders/Objects/grp_camera.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,4 +1,4 @@
-function move_simple(_spd, _dir) {
+function move_simple(_spd, _dir, _inside_wall=false) {
 
 	var xtarg = round(x + lengthdir_x(_spd, _dir));
 	var ytarg = round(y + lengthdir_y(_spd, _dir));
@@ -15,7 +15,7 @@ function move_simple(_spd, _dir) {
 
 	//moving right
 	if (xtarg > x) {
-		bbox_x = bbox_right - x + 1;
+		bbox_x = bbox_right - x;
 	}
 	//moving left
 	else if (xtarg < x) {
@@ -28,29 +28,52 @@ function move_simple(_spd, _dir) {
 	}
 	//moving down
 	else if (ytarg > y) {
-		bbox_y = bbox_bottom - y + 1;
+		bbox_y = bbox_bottom - y;
 	}
 
 	#endregion
 	
-	if (!(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) > 0)) {
-		x = xtarg;
-		setx = true;
-	}
-	else {
-		var inc = sign(xtarg - x);
-		while (!(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) > 0)) {
-			x += inc;
+	if (!_inside_wall) {
+		if (!(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) > 0)) {
+			x = xtarg;
+			setx = true;
 		}
-	}
-	if (!(tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) > 0)) {
-		y = ytarg;
-		sety = true;
-	}
-	else {
-		var inc = sign(ytarg - y);
-		while (!(tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) > 0)) {
-			y += inc;
+		else {
+			var inc = sign(xtarg - x);
+			while (!(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) > 0)) {
+				x += inc;
+			}
+		}
+		if (!(tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) > 0)) {
+			y = ytarg;
+			sety = true;
+		}
+		else {
+			var inc = sign(ytarg - y);
+			while (!(tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) > 0)) {
+				y += inc;
+			}
+		}
+	} else {
+		if ((tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) != 0)) {
+			x = xtarg;
+			setx = true;
+		}
+		else {
+			var inc = sign(xtarg - x);
+			while ((tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) != 0)) {
+				x += inc;
+			}
+		}
+		if ((tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) != 0)) {
+			y = ytarg;
+			sety = true;
+		}
+		else {
+			var inc = sign(ytarg - y);
+			while ((tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) != 0)) {
+				y += inc;
+			}
 		}
 	}
 }

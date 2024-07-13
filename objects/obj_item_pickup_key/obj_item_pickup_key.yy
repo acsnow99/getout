@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ctrl_camera",
+  "%Name":"obj_item_pickup_key",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ctrl_camera",
+  "name":"obj_item_pickup_key",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_camera",
-    "path":"folders/Objects/grp_camera.yy",
+    "name":"grp_pickups",
+    "path":"folders/Objects/grp_pickups.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_item_pickup",
+    "path":"objects/obj_item_pickup/obj_item_pickup.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_pickup_message",
+    "path":"sprites/spr_pickup_message/spr_pickup_message.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

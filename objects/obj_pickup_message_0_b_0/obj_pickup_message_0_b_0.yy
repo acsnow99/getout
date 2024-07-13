@@ -8,8 +8,8 @@
   "name":"obj_pickup_message_0_b_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_messages",
+    "path":"folders/Objects/grp_messages.yy",
   },
   "parentObjectId":{
     "name":"obj_pickup_message",
