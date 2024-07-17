@@ -17,6 +17,6 @@ function set_not_selected() {
 
 function pickup() {
 	global.player_has_pickup = true;
-	instance_create_layer(x, y, "Instances", held_object);
+	instance_create_layer(x, y, "held_items", held_object);
 	instance_destroy(self);
 }

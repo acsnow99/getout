@@ -5,6 +5,12 @@ active = true;
 
 inside_wall = false;
 
+moving = false;
+
+image_index = 0;
+image_speed = 0;
+
+
 function movement_input() {
 	var xinput = 0;
 	var yinput = 0;
@@ -29,7 +35,32 @@ function movement_input() {
 		var dir_exact = point_direction(0, 0, xinput, yinput);
 
 		move_simple(speed_exact, dir_exact, inside_wall);
+		
+		set_is_moving(true);
+		update_sprite_direction();
+	} else {
+		set_is_moving(false);
 	}
+}
+
+function set_is_moving(is_moving) {
+	if (!moving && is_moving) {
+		image_index = 1;
+		image_speed = 1;
+	}
+	if (moving && !is_moving) {
+		image_index = 0;
+		image_speed = 0;
+	}
+	moving = is_moving;
+}
+
+function update_sprite_direction() {
+	if (x > xprevious) {
+		image_xscale = 1;
+	} else if (x < xprevious) {
+		image_xscale = -1;
+	} 
 }
 
 function disable() {
