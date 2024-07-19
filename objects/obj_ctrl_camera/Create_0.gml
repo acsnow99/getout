@@ -18,6 +18,8 @@ focus_obj = obj_player;
 
 tracking_speed = 1;
 
+layer_set_visible("collision", false);
+
 function camera_set_position() {
 	if (!instance_exists(focus_obj) || !global.level_bounds_initialized) {
 		exit;

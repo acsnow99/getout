@@ -46,6 +46,7 @@
     {"id":{"name":"obj_ctrl_pickups","path":"objects/obj_ctrl_pickups/obj_ctrl_pickups.yy",},},
     {"id":{"name":"obj_ctrl_wall_switcher","path":"objects/obj_ctrl_wall_switcher/obj_ctrl_wall_switcher.yy",},},
     {"id":{"name":"obj_door_locked_level","path":"objects/obj_door_locked_level/obj_door_locked_level.yy",},},
+    {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_item_held_box","path":"objects/obj_item_held_box/obj_item_held_box.yy",},},
     {"id":{"name":"obj_item_held","path":"objects/obj_item_held/obj_item_held.yy",},},
     {"id":{"name":"obj_item_pickup_box","path":"objects/obj_item_pickup_box/obj_item_pickup_box.yy",},},
