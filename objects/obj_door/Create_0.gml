@@ -1,8 +1,8 @@
 
+event_inherited();
+
 close_to_player = false;
 interact_distance = 64;
-
-target_obj = inst_door_anchor_0;
 
 function set_selected() {
 	close_to_player = true;

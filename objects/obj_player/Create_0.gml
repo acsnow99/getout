@@ -1,5 +1,5 @@
 
-move_speed = 0.0006;
+move_speed = 0.0003;
 
 active = true;
 

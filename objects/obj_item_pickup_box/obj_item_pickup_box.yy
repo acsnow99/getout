@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crate",
-    "path":"sprites/spr_crate/spr_crate.yy",
+    "name":"spr_crate_pickup",
+    "path":"sprites/spr_crate_pickup/spr_crate_pickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,
