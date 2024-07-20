@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_desk",
+  "%Name":"obj_armor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_desk",
+  "name":"obj_armor",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_messages",
-    "path":"folders/Objects/grp_messages.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_collision_parent",
@@ -28,15 +29,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"image_index","filters":[],"listItems":[],"multiselect":false,"name":"image_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_desk",
-    "path":"sprites/spr_desk/spr_desk.yy",
+    "name":"spr_armor",
+    "path":"sprites/spr_armor/spr_armor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,5 +1,5 @@
 
-global.player_has_pickup = false;
+global.held_item = noone;
 global.pickup_selected = noone;
 
 function set_selected_pickup(pickup) {
@@ -7,6 +7,6 @@ function set_selected_pickup(pickup) {
 }
 
 function reset_variables() {
-	global.player_has_pickup = false;
+	global.held_item = noone;
 	global.pickup_selected = noone;
 }

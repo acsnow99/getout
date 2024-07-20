@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_crate_pickup",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":4,
   "bbox_right":27,
-  "bbox_top":4,
+  "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

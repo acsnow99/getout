@@ -34,44 +34,44 @@ function move_simple(_spd, _dir, _inside_wall=false) {
 	#endregion
 	
 	if (!_inside_wall) {
-		if (!(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) > 0)) {
+		if (!(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) > 0) && !(place_meeting(xtarg, y, obj_collision_parent))) {
 			x = xtarg;
 			setx = true;
 		}
 		else {
 			var inc = sign(xtarg - x);
-			while (!(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) > 0)) {
+			while (!(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) > 0) && !(tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) > 0) && !(place_meeting(xtarg, y, obj_collision_parent))) {
 				x += inc;
 			}
 		}
-		if (!(tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) > 0)) {
+		if (!(tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) > 0) && !(place_meeting(x, ytarg, obj_collision_parent))) {
 			y = ytarg;
 			sety = true;
 		}
 		else {
 			var inc = sign(ytarg - y);
-			while (!(tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) > 0)) {
+			while (!(tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) > 0) && !(tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) > 0) && !(place_meeting(x, ytarg, obj_collision_parent))) {
 				y += inc;
 			}
 		}
 	} else {
-		if ((tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) != 0)) {
+		if ((tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, xtarg + bbox_x, bbox_bottom) != 0) && !(place_meeting(xtarg, y, obj_collision_parent))) {
 			x = xtarg;
 			setx = true;
 		}
 		else {
 			var inc = sign(xtarg - x);
-			while ((tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) != 0)) {
+			while ((tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_top) != 0) && (tilemap_get_at_pixel(map, x + inc + bbox_x, bbox_bottom) != 0) && !(place_meeting(xtarg, y, obj_collision_parent))) {
 				x += inc;
 			}
 		}
-		if ((tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) != 0)) {
+		if ((tilemap_get_at_pixel(map, bbox_right, ytarg + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, ytarg + bbox_y) != 0) && !(place_meeting(x, ytarg, obj_collision_parent))) {
 			y = ytarg;
 			sety = true;
 		}
 		else {
 			var inc = sign(ytarg - y);
-			while ((tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) != 0)) {
+			while ((tilemap_get_at_pixel(map, bbox_right, y + inc + bbox_y) != 0) && (tilemap_get_at_pixel(map, bbox_left, y + inc + bbox_y) != 0) && !(place_meeting(x, ytarg, obj_collision_parent))) {
 				y += inc;
 			}
 		}

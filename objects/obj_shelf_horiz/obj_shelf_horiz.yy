@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_desk",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_shelf_horiz",
+  "eventList":[],
   "managed":true,
-  "name":"obj_desk",
+  "name":"obj_shelf_horiz",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_messages",
-    "path":"folders/Objects/grp_messages.yy",
+    "name":"grp_collision",
+    "path":"folders/Objects/grp_collision.yy",
   },
   "parentObjectId":{
     "name":"obj_collision_parent",
@@ -28,15 +26,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"image_index","filters":[],"listItems":[],"multiselect":false,"name":"image_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_desk",
-    "path":"sprites/spr_desk/spr_desk.yy",
+    "name":"spr_shelf_horiz_0",
+    "path":"sprites/spr_shelf_horiz_0/spr_shelf_horiz_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_held_box",
+  "%Name":"obj_collision_parent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_item_held_box",
+  "name":"obj_collision_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_pickups",
-    "path":"folders/Objects/grp_pickups.yy",
+    "name":"grp_collision",
+    "path":"folders/Objects/grp_collision.yy",
   },
-  "parentObjectId":{
-    "name":"obj_item_held",
-    "path":"objects/obj_item_held/obj_item_held.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_crate_pickup",
-    "path":"sprites/spr_crate_pickup/spr_crate_pickup.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
