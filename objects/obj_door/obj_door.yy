@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_anchor",
+    "path":"sprites/spr_anchor/spr_anchor.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

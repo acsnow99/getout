@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_pickup_key",
+  "%Name":"obj_desk",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_item_pickup_key",
+  "name":"obj_desk",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_pickups",
-    "path":"folders/Objects/grp_pickups.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_item_pickup",
-    "path":"objects/obj_item_pickup/obj_item_pickup.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,14 +25,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"image_index","filters":[],"listItems":[],"multiselect":false,"name":"image_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_anchor",
-    "path":"sprites/spr_anchor/spr_anchor.yy",
+    "name":"spr_desk",
+    "path":"sprites/spr_desk/spr_desk.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
