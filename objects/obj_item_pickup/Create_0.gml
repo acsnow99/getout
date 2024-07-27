@@ -19,7 +19,6 @@ function set_not_selected() {
 }
 
 function pickup() {
-	global.held_item = held_object;
-	instance_create_layer(x, y, "held_items", held_object);
+	global.held_item = instance_create_layer(x, y, "held_items", held_object);
 	instance_destroy(self);
 }
