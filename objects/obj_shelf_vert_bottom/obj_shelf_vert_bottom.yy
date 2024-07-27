@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_shelf_vert_bottom",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collision_parent","path":"objects/obj_collision_parent/obj_collision_parent.yy",},"propertyId":{"name":"y_draw_offset","path":"objects/obj_collision_parent/obj_collision_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"24",},
+  ],
   "parent":{
     "name":"grp_collision",
     "path":"folders/Objects/grp_collision.yy",

@@ -1,10 +1,12 @@
 
 close_to_player = false;
-interact_distance = 48;
+interact_distance = 24;
 held_object = obj_item_held;
 
 draw_select_offset_x = 0;
 draw_select_offset_y = 0;
+
+depth = -y;
 
 function set_selected() {
 	close_to_player = true;

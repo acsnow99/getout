@@ -1,10 +1,12 @@
 
 close_to_player = false;
-interact_distance = 48;
+interact_distance = 24;
 held_object = obj_item_held;
 
 draw_select_offset_x = 0;
 draw_select_offset_y = 0;
+
+depth = -y;
 
 function set_selected() {
 	close_to_player = true;
@@ -19,7 +21,6 @@ function set_not_selected() {
 }
 
 function pickup() {
-	global.player_has_pickup = true;
-	instance_create_layer(x, y, "held_items", held_object);
+	global.held_item = instance_create_layer(x, y, "held_items", held_object);
 	instance_destroy(self);
 }

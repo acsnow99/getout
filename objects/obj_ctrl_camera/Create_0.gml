@@ -2,11 +2,11 @@
 #macro VIEW view_camera[0]
 
 
-global.default_view_width = 960;
+global.default_view_width = 480;
 global.view_width = global.default_view_width;
-global.default_view_height = 540;
+global.default_view_height = 270;
 global.view_height = global.default_view_height;
-global.window_scale = 2;
+global.window_scale = 4;
 
 window_set_size(global.view_width*global.window_scale, global.view_height*global.window_scale);
 surface_resize(application_surface, global.view_width*global.window_scale, global.view_height*global.window_scale);
@@ -19,6 +19,7 @@ focus_obj = obj_player;
 tracking_speed = 1;
 
 layer_set_visible("collision", false);
+layer_set_visible("darkness", true);
 
 function camera_set_position() {
 	if (!instance_exists(focus_obj) || !global.level_bounds_initialized) {
