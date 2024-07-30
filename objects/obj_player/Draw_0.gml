@@ -1,5 +1,9 @@
 
+if (global.fading || global.message_open) { image_index = 0; image_speed = 0; }
+
 depth = -y;
+
+if (global.held_item != noone && global.held_item.object_index == obj_item_held_invisible) exit;
 
 if (active) {
 	if (moving && image_index == 0) image_index++;
