@@ -35,7 +35,7 @@ function wrap_text(str, maxwidth){
 	var last_space = 1;
 	var count = 1;
 	var substr;
-	draw_set_font(font_note_alt);
+	draw_set_font(font_note_1);
 	repeat(str_length) {
 		substr = string_copy(str, 1, count);
 		if (string_char_at(str, count) == " ") last_space = count;

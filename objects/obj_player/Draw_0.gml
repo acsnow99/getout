@@ -6,6 +6,8 @@ depth = -y;
 if (global.held_item != noone && global.held_item.object_index == obj_item_held_invisible) exit;
 
 if (active) {
-	if (moving && image_index == 0) image_index++;
+	if (moving && image_index == 0) {
+		image_index++;
+	}
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 }

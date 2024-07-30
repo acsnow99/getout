@@ -17,7 +17,7 @@ draw_set_alpha(1);
 
 draw_sprite_ext(spr_dialogue_box, 0, 0, 0, global.window_scale, global.window_scale, 0 , c_white, 1);
 
-draw_set_font(font_note_alt);
+draw_set_font(font_note_1);
 draw_text(text_x_buffer, text_y_buffer, current_text);
 
 draw_set_color(c_white);

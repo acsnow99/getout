@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"font_note_alt",
+  "%Name":"font_note_1",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":55,
@@ -445,7 +445,7 @@
   "last":0,
   "lineHeight":71,
   "maintainGms1Font":false,
-  "name":"font_note_alt",
+  "name":"font_note_1",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

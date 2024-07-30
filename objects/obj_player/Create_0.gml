@@ -7,6 +7,9 @@ inside_wall = false;
 
 moving = false;
 
+held_item_speed_multiplier = 0.75;
+held_item_image_speed = 0.6;
+
 image_index = 0;
 image_speed = 0;
 
@@ -15,6 +18,8 @@ function movement_input() {
 	var xinput = 0;
 	var yinput = 0;
 	var key_pressed = false;
+	var speed_multiplier = 1;
+	if (global.held_item != noone) speed_multiplier = held_item_speed_multiplier;
 	
 	for (var i = 0; i < global.keyboard_input_count; i++;) {
 	
@@ -31,7 +36,7 @@ function movement_input() {
 	}
 	
 	if (key_pressed) {
-		var speed_exact = move_speed * delta_time;
+		var speed_exact = move_speed * delta_time * speed_multiplier;
 		var dir_exact = point_direction(0, 0, xinput, yinput);
 
 		move_simple(speed_exact, dir_exact, inside_wall);
