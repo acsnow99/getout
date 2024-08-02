@@ -1,5 +1,5 @@
 
-if (!instance_exists(obj_player) || global.message_open) exit;
+if (!instance_exists(obj_player)) exit;
 
 if (distance_to_object(obj_player) < interact_distance) {
 	if (global.held_item == noone && global.pickup_selected == noone) {
@@ -8,5 +8,3 @@ if (distance_to_object(obj_player) < interact_distance) {
 } else {
 	set_not_selected();
 }
-
-event_inherited();

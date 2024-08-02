@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_pickup_message_guy",
+  "%Name":"obj_eye_decoration",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_item_pickup_message_guy",
+  "name":"obj_eye_decoration",
   "overriddenProperties":[],
   "parent":{
-    "name":"grp_pickups",
-    "path":"folders/Objects/grp_pickups.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_item_pickup",
-    "path":"objects/obj_item_pickup/obj_item_pickup.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_guy",
-    "path":"sprites/spr_npc_guy/spr_npc_guy.yy",
+    "name":"spr_eye",
+    "path":"sprites/spr_eye/spr_eye.yy",
   },
   "spriteMaskId":null,
   "visible":true,

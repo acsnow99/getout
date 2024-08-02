@@ -14,6 +14,8 @@ text_array = ["You've done it now, guy...",
 "Just remember, office on the opposite side of the warehouse, grab the key, and come right back."];
 end_page_index = 8;
 
+draw_select_offset_y = -22;
+
 function pickup() {
 	obj_ctrl_messages.start_message(text_array, end_page_index);
 }

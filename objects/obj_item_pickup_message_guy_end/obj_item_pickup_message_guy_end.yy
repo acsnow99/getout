@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_pickup_message_guy",
+  "%Name":"obj_item_pickup_message_guy_end",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_item_pickup_message_guy",
+  "name":"obj_item_pickup_message_guy_end",
   "overriddenProperties":[],
   "parent":{
     "name":"grp_pickups",
