@@ -8,8 +8,8 @@
   "name":"obj_ctrl_pause",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_menus",
+    "path":"folders/Objects/grp_menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

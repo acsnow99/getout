@@ -4,6 +4,8 @@ image_index = 0;
 
 event_inherited();
 
+interact_distance = 64;
+
 text_array = ["You've done it now, guy...", 
 "Oh, don't look at me with that glum face of yours, you know what you did.",
 "You shut the door to the warehouse, just like I told you not to, like, ten minutes ago!! Now we're locked in here!", 

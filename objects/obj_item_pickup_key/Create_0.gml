@@ -11,6 +11,7 @@ function pickup() {
 	instance_destroy(inst_door_select_office_0);
 	obj_desk.image_index = 1;
 	teleport_boxes();
+	audio_play_sound(snd_shiny, 1, false);
 	instance_destroy(self);
 }
 

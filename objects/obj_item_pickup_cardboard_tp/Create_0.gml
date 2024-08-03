@@ -15,3 +15,9 @@ function teleport_self() {
 	y = inst_door_anchor_4.y + dist_y;
 	alarm_set(0, 2);
 }
+
+function pickup() {
+	global.held_item = instance_create_layer(x, y, "held_items", held_object);
+	audio_play_sound(snd_cardboard, 1, false);
+	instance_destroy(self);
+}

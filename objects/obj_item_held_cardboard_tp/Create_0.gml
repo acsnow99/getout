@@ -15,6 +15,7 @@ function drop() {
 	var o = instance_create_layer(x + drop_x_offset, y + drop_y_offset, "Instances", pickup_object);
 	o.image_index = 0;
 	o.image_xscale = image_xscale;
+	audio_play_sound(snd_cardboard1, 1, false);
 	instance_destroy(self);
 }
 

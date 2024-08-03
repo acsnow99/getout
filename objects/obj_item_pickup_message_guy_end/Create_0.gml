@@ -4,6 +4,8 @@ image_index = 0;
 
 event_inherited();
 
+interact_distance = 64;
+
 text_array = [
 "Finally! Took you long enough. Now let's get out of here.", 
 "Gosh, you look like you've seen a ghost.",

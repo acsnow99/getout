@@ -1,5 +1,5 @@
 
-fade_to_black_length = 1.5;
+fade_to_black_length = 2;
 alarmvar_fade = fade_to_black_length;
 global.fading = false;
 

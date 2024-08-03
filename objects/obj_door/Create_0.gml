@@ -2,7 +2,7 @@
 event_inherited();
 
 close_to_player = false;
-interact_distance = 32;
+interact_distance = 64;
 
 function set_selected() {
 	close_to_player = true;

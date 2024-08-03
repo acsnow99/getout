@@ -9,6 +9,9 @@ global.credits_ready_to_end = false;
 function start_credits() {
 	global.credits_active = true;
 	global.message_open = true;
+	if (global.skull_helped) {
+		obj_ctrl_draw_credits.alt_ending();
+	}
 }
 
 function update_credits() {

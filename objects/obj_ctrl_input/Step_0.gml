@@ -1,6 +1,6 @@
 
 if (keyboard_check_pressed(vk_escape)) {
-	game_end();
+	obj_ctrl_pause.pause();
 }
 if (keyboard_check_pressed(ord("R"))) {
 	game_restart();

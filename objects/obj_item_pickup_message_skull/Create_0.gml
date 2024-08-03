@@ -1,6 +1,8 @@
 
 event_inherited();
 
+interact_distance = 48;
+
 alt_dialogue_activated = false;
 
 text_array = ["Hello, intrepid curios collector! As you may see I am but a humble skull trapped within your impressively gargantuan collection.",
@@ -16,6 +18,7 @@ function pickup() {
 	if (distance_to_object(obj_item_pickup_treasure) < 128) {
 		set_alt_message();
 		alt_dialogue_activated = true;
+		instance_destroy(obj_item_pickup_treasure);
 	}
 	obj_ctrl_messages.start_message(text_array, end_page_index);
 }
@@ -35,5 +38,6 @@ function open_door() {
 	set_not_selected();
 	instance_destroy(instance_nearest(x, y, obj_shelf_horiz_1));
 	instance_create_layer(x, y, "Instances", obj_shelf_vert_skull);
+	global.skull_helped = true;
 	instance_destroy(self);
 }

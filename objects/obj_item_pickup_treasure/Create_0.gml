@@ -13,5 +13,6 @@ function disabled_condition() {
 function pickup() {
 	global.held_item = instance_create_layer(x, y, "held_items", held_object);
 	obj_player.set_mode_hyper();
+	audio_play_sound(snd_shiny, 1, false);
 	instance_destroy(self);
 }
