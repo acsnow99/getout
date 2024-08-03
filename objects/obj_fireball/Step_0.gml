@@ -8,6 +8,11 @@ if (place_meeting(x, y, o)) {
 	instance_destroy(o);
 }
 
+var o = instance_nearest(x, y, obj_item_pickup_cardboard_parent);
+if (place_meeting(x, y, o)) {
+	instance_destroy(o);
+}
+
 if (place_meeting(x, y, obj_collision_parent)) {
 	instance_destroy(self);
 }

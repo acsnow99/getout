@@ -3,6 +3,7 @@
   "%Name":"obj_item_pickup_treasure",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_item_pickup_treasure",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_anchor",
-    "path":"sprites/spr_anchor/spr_anchor.yy",
+    "name":"spr_crystal",
+    "path":"sprites/spr_crystal/spr_crystal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

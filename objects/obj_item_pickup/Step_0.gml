@@ -1,5 +1,5 @@
 
-if (!instance_exists(obj_player) || global.message_open) exit;
+if (disabled_condition()) exit;
 
 if (distance_to_object(obj_player) < interact_distance) {
 	if (global.held_item == noone && global.pickup_selected == noone) {

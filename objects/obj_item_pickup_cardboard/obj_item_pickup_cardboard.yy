@@ -12,8 +12,8 @@
     "path":"folders/Objects/grp_pickups.yy",
   },
   "parentObjectId":{
-    "name":"obj_item_pickup_collision",
-    "path":"objects/obj_item_pickup_collision/obj_item_pickup_collision.yy",
+    "name":"obj_item_pickup_cardboard_parent",
+    "path":"objects/obj_item_pickup_cardboard_parent/obj_item_pickup_cardboard_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

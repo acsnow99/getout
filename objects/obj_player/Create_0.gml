@@ -7,8 +7,13 @@ inside_wall = false;
 
 moving = false;
 
-held_item_speed_multiplier = 0.75;
+held_item_speed_multiplier_default = 0.75;
+held_item_speed_multiplier = held_item_speed_multiplier_default;
 held_item_image_speed = 0.6;
+
+floating = false;
+
+draw_color = c_white;
 
 image_index = 0;
 image_speed = 0;
@@ -38,8 +43,11 @@ function movement_input() {
 	if (key_pressed) {
 		var speed_exact = move_speed * delta_time * speed_multiplier;
 		var dir_exact = point_direction(0, 0, xinput, yinput);
-
-		move_simple(speed_exact, dir_exact, inside_wall);
+		if (!floating) {
+			move_simple(speed_exact, dir_exact, inside_wall);
+		} else {
+			move_float(speed_exact, dir_exact);
+		}
 		
 		set_is_moving(true);
 		update_sprite_direction();
@@ -58,6 +66,37 @@ function set_is_moving(is_moving) {
 		image_speed = 0;
 	}
 	moving = is_moving;
+}
+
+function set_speed_multiplier(mult) {
+	held_item_speed_multiplier = mult;
+}
+
+function reset_speed_multiplier() {
+	held_item_speed_multiplier = held_item_speed_multiplier_default;
+}
+
+function set_draw_color(color) {
+	draw_color = color;
+}
+
+function reset_draw_color() {
+	draw_color = c_white;
+}
+
+function set_mode_hyper() {
+	set_speed_multiplier(3);
+	set_draw_color(c_aqua);
+}
+
+function set_mode_float() {
+	floating = true;
+}
+
+function set_mode_default() {
+	reset_speed_multiplier();
+	reset_draw_color();
+	floating = false;
 }
 
 function update_sprite_direction() {

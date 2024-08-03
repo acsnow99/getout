@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"obj_item_pickup_collision",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collision_parent","path":"objects/obj_collision_parent/obj_collision_parent.yy",},"propertyId":{"name":"y_draw_offset","path":"objects/obj_collision_parent/obj_collision_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+  ],
   "parent":{
     "name":"grp_pickups",
     "path":"folders/Objects/grp_pickups.yy",

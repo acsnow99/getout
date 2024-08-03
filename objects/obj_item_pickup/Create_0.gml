@@ -1,6 +1,6 @@
 
 close_to_player = false;
-interact_distance = 24;
+interact_distance = 16;
 held_object = obj_item_held;
 
 draw_select_offset_x = 0;
@@ -23,4 +23,8 @@ function set_not_selected() {
 function pickup() {
 	global.held_item = instance_create_layer(x, y, "held_items", held_object);
 	instance_destroy(self);
+}
+
+function disabled_condition() {
+	return !instance_exists(obj_player) || global.message_open;
 }
