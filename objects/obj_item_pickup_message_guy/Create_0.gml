@@ -19,6 +19,7 @@ end_page_index = 8;
 draw_select_offset_y = -22;
 
 function pickup() {
+	audio_play_sound(snd_sigh, 1, false);
 	obj_ctrl_messages.start_message(text_array, end_page_index);
 }
 

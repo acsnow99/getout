@@ -18,4 +18,5 @@ function set_not_selected() {
 
 function pickup() {
 	obj_player.teleport(target_obj.x, target_obj.y);
+	audio_play_sound(snd_door, 1, false);
 }

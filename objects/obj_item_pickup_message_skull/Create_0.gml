@@ -21,6 +21,7 @@ function pickup() {
 		instance_destroy(obj_item_pickup_treasure);
 	}
 	obj_ctrl_messages.start_message(text_array, end_page_index);
+	audio_play_sound(snd_chuckle, 1, false);
 }
 
 function set_alt_message() {

@@ -11,3 +11,8 @@ function teleport_self() {
 	alarm_set(0, 2);
 }
 
+function pickup() {
+	global.held_item = instance_create_layer(x, y, "held_items", held_object);
+	audio_play_sound(snd_box, 1, false);
+	instance_destroy(self);
+}
